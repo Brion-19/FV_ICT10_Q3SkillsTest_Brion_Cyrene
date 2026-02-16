@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+    body {
+        background: pink;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .container {
+        background: beige;
+        text-align: center;
+        display: flex;
+        width: 420px;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        flex-direction: column;   
+        align-items: center;     
+         }
+    input {
+        font-size: 16px;
+        margin: 10px 0;
+        width: 90%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    button {
+        background: #de7699;
+        color: #ffffff;
+        margin: 15px 0;
+        width: 95%;
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #b83a79 (255, 0, 234);
+    }
+    #result {
+        font-weight: bold;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+</style>
+<head>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Account Creation</h1>
+        <p>Enter username</p>
+        <input type="username" id="username" placeholder="Username">
+        <br>
+        <p>Enter password</p>
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <button py-click="account_creation">Sign Up</button>
+    </div>
+
+    <div id="output" class="mt-3 text-center"></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
